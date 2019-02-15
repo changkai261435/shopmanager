@@ -8,7 +8,8 @@
             <el-form-item label="密码">
                 <el-input v-model="fromData.password"></el-input>
             </el-form-item>
-            <el-button @click.prevent='handlelogin()' type="primary" class="login-button">登录</el-button>
+            <el-button 
+            @click.prevent='handlelogin()' type="primary" class="login-button">登录</el-button>
         </el-form>
     </div>
 </template>
@@ -21,7 +22,7 @@ export default {
         username: "",
         password: ""
       }
-    };
+    }
   },
   methods: {
     handlelogin() {
